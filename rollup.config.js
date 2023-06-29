@@ -1,3 +1,6 @@
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+
 export default {
   input: "src/main.js",
   output: {
@@ -6,5 +9,6 @@ export default {
     format: "es",
     name: "bundleName",
   },
-  external: ["axios"],
+  plugins: [resolve(), commonjs()],
+  // external: ["axios"],
 };

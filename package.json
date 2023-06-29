@@ -1,9 +1,14 @@
 {
   "devDependencies": {
     "axios": "^1.4.0",
+    "lodash": "^4.17.21",
     "rollup": "^3.25.3"
   },
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0"
   }
 }
