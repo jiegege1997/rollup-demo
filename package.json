@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "axios": "^1.4.0",
+    "rollup": "^3.25.3"
+  },
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs"
+  }
+}
