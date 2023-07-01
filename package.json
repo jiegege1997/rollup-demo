@@ -2,13 +2,17 @@
   "devDependencies": {
     "axios": "^1.4.0",
     "lodash": "^4.17.21",
-    "rollup": "^3.25.3"
+    "rollup": "^3.25.3",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^2.0.2"
   },
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev": "rollup --config rollup.config.dev.js --bundleConfigAsCjs -w"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.1.0"
   }
 }
